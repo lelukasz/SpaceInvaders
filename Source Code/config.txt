@@ -1,0 +1,26 @@
+#HEALTH
+100 25 50 25
+Player / enemy_1 /enemy_2/ enemy_3
+#BULLET_DMG
+25 25 25 50
+Player /enemy_1 / enmy_2/ enemy_3
+#SCORES
+10 20 30
+enemy_1/ enemy_2/ enemy_3
+#MOVE_TIME_LEVEL
+5
+#MOVE_TIME_VERTICAL
+1
+
+*ustawienia leveli*
+#LEVEL_1
+1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+7 stakow (1) w wierszu 1
+#LEVEL_2
+1 1 1 2 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#LEVEL_3
+1 0 0 0 0 0 1 0 1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0
+#LEVEL_4
+1 1 1 1 1 1 1 0 1 1 2 1 1 0 0 0 1 2 1 0 0 0 0 0 1 0 0 0
+#LEVEL_5
+1 1 1 1 1 1 1 1 1 2 1 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1
