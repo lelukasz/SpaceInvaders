@@ -1,0 +1,13 @@
+instrukcja
+
+Tekst instrukcji
+Tekst instrukcji
+Tekst instrukcji
+Tekst instrukcji
+Tekst instrukcji
+Tekst instrukcji
+Tekst instrukcji
+Tekst instrukcji
+Tekst instrukcji
+Tekst instrukcji
+#END

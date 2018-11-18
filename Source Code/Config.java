@@ -8,6 +8,64 @@ import java.lang.IllegalStateException;
 
 
 public class Config {
+	/**
+	 * 
+	 * @return
+	 */
+	public static String getInstruction() {
+		File file = new File ("C:\\Studia\\Semestr 4\\PROZE\\Projekt\\SpaceInvaders\\Source Code\\instruction.txt");
+		Scanner in =null;
+		try {
+			in = new Scanner(file);
+		}
+		catch(FileNotFoundException e) {
+			return null;
+		}
+		String instruction = null;
+		try {
+			instruction = ("\n"); 
+			while(true) {
+				instruction = instruction+in.nextLine()+("\n");
+				if(instruction.equals("#END")) {
+					break;
+				}
+				 
+				
+			}
+		}
+		catch(NoSuchElementException e) {
+			try {
+				in.close();
+			}
+			catch(IllegalStateException ise) {
+				return null;
+			}
+			
+		}
+		catch (IllegalStateException e) {
+			try {
+				in.close();
+			}
+			catch(IllegalStateException ise) {
+				return null;
+			}
+			
+		}
+		try {
+			in.close();
+		}
+		catch(IllegalStateException ise) {
+		}
+		return instruction;
+	}
+	/**
+	 * 
+	 * @param parameter
+	 * @param line
+	 * @param column
+	 * @param defaultLevel
+	 * @return
+	 */
 	public static int[][]setLevel(String parameter,int line,int column ,int [][]defaultLevel){
 		String temp =fromFile(parameter);
 		int count = line*column;
@@ -17,7 +75,7 @@ public class Config {
 			
 			return defaultLevel;
 		}
-		//try {
+		try {
 			int[] space = new int [count -1];
 			space[0]= temp.indexOf(' '); // zwraca wartosc indeksu na ktorym znajduje sie spacja
 			for (int i =0; i< count-2;i++) {
@@ -40,11 +98,11 @@ public class Config {
 				
 				return defaultLevel;
 			}
-		//}
-		//catch(NullPointerException e) {
-		//	System.out.println("here");
-		//	return defaultLevel;
-		//}
+		}
+		catch(NullPointerException e) {
+			System.out.println("here");
+			return defaultLevel;
+		}
 		return tempInt;
 	}
 	
